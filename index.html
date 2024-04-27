@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+        // 클라이언트 측에서 페이지 로딩 시 도메인을 리디렉션하는 함수
+        function redirectPage() {
+            // 모바일인지 PC인지 판별하는 조건문
+            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            if (isMobile) {
+                // 모바일 기기일 경우 모바일용 Notion 링크로 리디렉션
+                window.location = "http://hccopy.notion.site/hccopy-naver-com-042-823-1212-042-823-7415-042-565-7979-042-823-8908-5e1fdf71f8074ceeb874c75e7bac8776?pvs=74";
+            } else {
+                // PC일 경우 PC용 Notion 링크로 리디렉션
+                window.location = "https://hccopy.notion.site/hccopy-naver-com-042-823-1212-042-823-7415-042-565-7979-042-823-8908-b0bb3fee0f584d289b9ce57628a9b5ef?pvs=74";
+            }
+        }
+    </script>
+</head>
+<body onload="redirectPage();">
+    <p>Redirecting...</p>
+</body>
+</html>
